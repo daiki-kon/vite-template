@@ -5,6 +5,10 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "prettier",
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -14,5 +18,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Reactの明示的なインポートを不要にする
+    "react/react-in-jsx-scope": "off",
   },
 }
