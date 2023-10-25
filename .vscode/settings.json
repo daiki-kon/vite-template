@@ -11,4 +11,8 @@
     "source.fixAll.prettier": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // tailwindの補完を有効
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
